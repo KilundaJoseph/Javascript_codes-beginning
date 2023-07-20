@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cart Quantity</title>
+          
+    </head>
+        <style>
+           button{
+            background-color: blue;
+            border: none;
+            color: white;
+           }
+
+           .red-button{
+            background-color: rgb(228, 64, 36);
+            color: rgb(14, 228, 85);
+            border-top-right-radius: 0cqi;
+           }
+           .yellow-button{
+            background-color: yellow;
+            color: #e40e0e;
+            border-top-right-radius: 0cqi;
+           }
+    </style>
+    <body>
+       
+        <button onclick = "
+             console.log(`Cart Quantity: ${ CartQuantity}`);
+            ">Show Quantity</button>
+
+
+        <button title="1" class="red-button" onclick ="
+         CartQuantity =  CartQuantity +1;
+         alert ('you have successfully added 1 item to cart')
+         console.log(`Cart Quantity: ${ CartQuantity}`); 
+        ">Add to Cart</button>
+
+
+        <button title="2" class="yellow-button"  onclick="
+         CartQuantity =  CartQuantity + 2;
+         alert ('you have successfully added 2 item to cart')
+         console.log(`Cart Quantity: ${ CartQuantity}`);">+2</button>
+
+
+        <button onclick="
+        CartQuantity =  CartQuantity + 3;
+         console.log(`Cart Quantity: ${ CartQuantity}`);">+3</button>
+
+
+        <button onclick="
+        CartQuantity =  CartQuantity * 0;
+         console.log(`Cart Quantity Reset.`);
+         console.log(`Cart Quantity : ${ CartQuantity}`);
+         ">Reset Cart</button>
+            <script>
+                 let cartQuantity = 0; 
+            </script>
+        
+         
+        </body>
+</html>
+
+
+
+
+

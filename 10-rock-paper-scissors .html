@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rock paper scissors</title>
+        <style>
+            body {
+                background-color: rgb(25,25,25);
+                color: white;
+                font-family: Arial;
+            }
+            .title{
+                font-size: 30px;
+                font-weight: bold;
+
+            }
+            .move-icon {
+                height: 50px;
+               
+            }
+            .move-button {
+                background-color: rgb(25,25,25);
+                border-radius: 50px;
+                padding: 10px;
+                border-color:white;
+                cursor: pointer;
+                margin-right: 10px;
+            }
+        </style>
+          
+    </head>
+    <body>
+        <p class="title">Rock Paper Scissors</p>
+        <button onclick="
+   playGame ('rock');
+      "class="move-button">
+       <img src="images/rock-emoji.png" class="move-icon"></button>
+
+
+        <button onclick="
+      playGame ('paper')
+  
+        " class="move-button"><img src="images/paper-emoji.png
+        "
+        class="move-icon"></button> 
+        
+         
+        <button onclick="
+            playGame ('scissors');
+        "class="move-button"><img src="images/paper-emoji.png
+        "
+        class="move-icon"></button>
+        <p class="js-score"></p>
+
+
+            <script src="10-dom-projects.js"></script>
+      
+        
+         
+        </body>
+</html>
+
+
+
+
+
